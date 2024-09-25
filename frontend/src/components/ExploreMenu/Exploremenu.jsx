@@ -23,3 +23,6 @@ const Exploremenu = ({category, setCategory}) => {
 }
 
 export default Exploremenu
+
+
+// prev: Represents the previous/current value of the category state.

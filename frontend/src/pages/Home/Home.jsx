@@ -11,10 +11,10 @@ const Home = () => {
 
   return (
     <div>
-      <Header/>
-      <Exploremenu category={category} setCategory={setCategory}/>
-      <FoodDisplay category ={category}/>
-      <Appdownload />
+       <Header/>
+       <Exploremenu category= {category} setCategory={setCategory}/>
+       <FoodDisplay category ={category}/>
+       <Appdownload />
     </div>
   )
 }
