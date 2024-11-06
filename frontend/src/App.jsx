@@ -7,12 +7,13 @@ import Cart from "./pages/Card/Cart";
 import Placeorder from './pages/Placeorder/Placeorder';
 import LoginPopup from './components/LoginPopup/LoginPopup';
 
+
 const App = () => {
   const [ShowLogin, setShowLogin] = useState(false);
 
   return (
     <>
-    {/* agar user login h to LoginPop show hoga */}
+      {/* agar showLogin True h to LoginPop show hoga */}
       { ShowLogin? <LoginPopup setShowLogin={setShowLogin} />:<></> } 
       <div className='app'>
         <Navbar setShowLogin={setShowLogin} />
