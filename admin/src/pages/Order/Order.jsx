@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Order.css"
 
-const Order = () => {
+const Order = ({url}) => {
   return (
     <div>
       <p>
