@@ -1,9 +1,10 @@
 .header{
-    height: 34vw;
+     height: 34vw;
      margin: 30px auto;
-     background: url('header_img.png') no-repeat;
-     background-size: contain;
+     background: url('Header2.jpg') no-repeat;
+     background-size: cover;
      position: relative;
+     border-radius: 25px;
 }
 .header-contents{
     position: absolute;
@@ -12,7 +13,7 @@
     align-items: start;
     gap: 1.5vw;
     max-width: 50%;
-    bottom:10% ;
+    bottom:18% ;
     left:6vw;
     animation: fadeIn 3s;
     
@@ -20,7 +21,8 @@
 }
 .header-contents h2{
     font-weight: 500;
-    color: white;
+    /* color: tomato; */
+    color: rgb(188, 175, 175);
     font-size: max(4.5vw ,22px) ;
 }
 

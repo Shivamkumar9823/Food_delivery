@@ -6,6 +6,7 @@ import { toast } from 'react-toastify'
 
 const Add = ({url}) => {
      const [image, setImage] = useState(false); // storing image in this variable...
+     
      const [data, setData] = useState({
         name:"",
         description:"",
@@ -31,7 +32,7 @@ const Add = ({url}) => {
         formData.append("category",data.category)
         formData.append("image",image)
 
-        const response = await axios.post(`${url}/api/food/add`,formData);
+        const response = await axios.post(`${url}/api/food/add`,formData);  //sending formdata to given endpoint... and receiving a responsec
 
         if(response.data.success){
             setData({

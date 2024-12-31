@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Cart = () => {
 
-  const {cartItems,food_list,removeFromCart, getTotalCartAmount} = useContext(StoreContext);
+  const {cartItems, food_list, removeFromCart, getTotalCartAmount,url,image} = useContext(StoreContext);
   
   const Navigate = useNavigate();
 
@@ -27,14 +27,14 @@ const Cart = () => {
                 if(cartItems[item._id]>0){ // if quantity of a perticular item is greater than 0 
                   return(
                     <div>
-                          <div className='cart-items-title cart-items-item'>
-                         <img src={item.image} alt="" />
+                         <div className='cart-items-title cart-items-item'>
+                         <img src={`${url+"/images/"+item.image}`} alt="" />
                          <p>{item.name}</p>
                          <p>{item.price*45}</p>
                          <p>{cartItems[item._id]}</p>
                          <p>Total Price :{item.price*45*cartItems[item._id]}</p>
                          <p onClick={()=>removeFromCart(item._id)} className='cross'>  x   </p>
-                    </div>
+                         </div>
                       <hr />
                       
                     </div>

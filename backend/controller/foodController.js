@@ -2,8 +2,9 @@ import foodModel from "../models/foodModel.js";
 import fs from 'fs';
 
 // add food item 
+
 const addfood = async (req,res) => {
-  
+
       let image_filename = `${req.file.filename}`;
       const food = new foodModel({
         name:req.body.name,
@@ -40,17 +41,20 @@ const listFood = async (req, res) =>{
 
 
 // remove food item
+
 const removeFood = async (req, res)=>{
     try {
       //searching item in Db
+      console.log(req.body)
       const food = await foodModel.findById(req.body._id);
+      console.log(food.name)
       if (!food) {
         return res.json({ success: false, message:"Food item not found" });
       }
       // deleting item from the upload
-      fs.unlink(`uploads/${food.image}`)
+     fs.unlink(`uploads/${food.image}`)
 
-      await foodModel.findByIdAndDelete(req.body._id);
+      await foodModel.findByIdAndDelete(req.body.id);
       return res.json({success:true, message:"food Removed"})
     } 
     catch (error) {
@@ -60,6 +64,5 @@ const removeFood = async (req, res)=>{
  
 }
 
-
-
 export {addfood, listFood, removeFood}
+

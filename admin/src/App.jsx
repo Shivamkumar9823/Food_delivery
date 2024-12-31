@@ -19,7 +19,7 @@ const App = () => {
       <Navbar />
       <hr />
       <div className="app-content">
-        <Sidebar />
+          <Sidebar />
           <Routes>
             <Route path="/add" element={<Add  url={url}/>} />
             <Route path="/list" element={<List url={url} />} />

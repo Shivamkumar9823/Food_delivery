@@ -10,6 +10,8 @@
     display: grid;
     overflow: hidden;
 }
+
+
 .login-popup-container{
     place-self: center;
     width: max(30vw,330px);
