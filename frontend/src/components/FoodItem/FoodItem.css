@@ -69,3 +69,15 @@
 .food-item-counter img{
     
 }
+
+.food-item-info a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+    font-weight: bold; /* Make it bold */
+    font-size: 1.1rem; /* Adjust font size */
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+.food-item-info a:hover {
+    color: #ff5722; /* Change color on hover */
+}

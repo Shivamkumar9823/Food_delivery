@@ -4,7 +4,7 @@ import {assets} from "../../assets/assets"
 const Header = () => {
   const headerStyle = {
     height: '34vw', // Wrap units like 'vw' in quotes
-    margin: '30px auto',
+    margin: '50px auto',
     background: `url(${assets.Header2}) no-repeat center center`, // Use a string for the URL
     backgroundSize: 'cover',
     position: 'relative',

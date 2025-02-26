@@ -1,0 +1,133 @@
+/* Fullscreen Layout */
+.food-detail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: #f8f8f8;
+    padding: 20px;
+}
+
+/* Food Card */
+.food-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.food-card:hover {
+    transform: scale(1.02);
+}
+
+/* Food Image */
+.food-image {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Food Name */
+.food-name {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Food Description */
+.food-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Price */
+.food-price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff4d00;
+    margin-bottom: 20px;
+}
+
+/* Add to Cart & Counter */
+.food-item-counter {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Counter Buttons */
+.counter-btn {
+    background: #ff4d00;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    font-size: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.counter-btn:hover {
+    background: #d84315;
+}
+
+/* Counter Value */
+.counter-value {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Add to Cart Button */
+.add-btn {
+    background: #ff4d00;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background: #d84315;
+}
+
+/* Back to Menu Button */
+.back-btn {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.back-btn:hover {
+    background: #555;
+}
+
+/* Food Not Found Message */
+.food-not-found {
+    text-align: center;
+    color: #ff4d00;
+    font-size: 22px;
+    font-weight: bold;
+}
