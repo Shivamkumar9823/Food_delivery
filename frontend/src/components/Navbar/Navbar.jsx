@@ -1,7 +1,7 @@
-import React, { useContext, useState, useRef } from 'react';
+import React, { useContext, useState, useRef} from 'react';
 import "./Navbar.css";
 import { assets } from '../../assets/assets';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate} from 'react-router-dom';
 import { StoreContext } from '../../context/storeContext';
 import { toast } from 'react-toastify';
 
@@ -13,6 +13,7 @@ const Navbar = ({ setShowLogin }) => {
     const navigate = useNavigate();
     const searchInputRef = useRef(null);
 
+    
     const logout = () => {
         localStorage.removeItem("token");
         setToken("");
@@ -44,7 +45,7 @@ const Navbar = ({ setShowLogin }) => {
                 <a href='#footer' onClick={() => setMenu("contact-us")} className={menu === "contact-us" ? "active" : ""}>Contact Us</a>
             </ul>
             <div className="navbar-right">
-                    <div className="navbar-search-container">
+                    <div className='navbar-search-container' >
                         <input
                             ref={searchInputRef}
                             type="text"
