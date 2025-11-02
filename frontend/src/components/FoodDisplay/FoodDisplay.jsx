@@ -1,15 +1,27 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import "./FoodDisplay.css"
 import { StoreContext } from '../../context/storeContext'
 import FoodItem from '../FoodItem/FoodItem'
 
 const FoodDisplay = ({category}) => {
   const {food_list} = useContext(StoreContext);
+  const [loading, setLoading] = useState(true);
+
   console.log(food_list );
 
   useEffect(()=>{
-     console.log("category: ",category);
-  },[category])
+      if (food_list && food_list.length > 0) {
+      setLoading(false);
+    }
+  },[category, food_list])
+
+  if (loading) {
+    return (
+      <div className="food-display-loading">
+        <h2>Loading delicious dishes 🍽️...</h2>
+      </div>
+    );
+  }
 
   return (
      <div className='food-display' id='food-display'>
