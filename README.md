@@ -1,6 +1,3 @@
-# Food_delivery
-
-visit : https://food-delivery-frontend-aq0g.onrender.com/
 # Food Delivery Application
 
 A full-stack food delivery web application that allows users to browse restaurants, view menus, place orders, and track deliveries in real-time. Built using the **MERN stack** (MongoDB, Express.js, React.js, Node.js), this project delivers a seamless experience for both customers and restaurant owners.
